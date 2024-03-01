@@ -1,0 +1,32 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-custom":
+          "linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0.00) 100%)",
+      },
+      backgroundColor: {
+        custom: "rgba(2, 15, 8, 0.50)",
+        btn: "rgba(255, 255, 255, 0.10)",
+      },
+      letterSpacing: {
+        custom: "9.48px",
+      },
+      lineHeight: {
+        "56": "56px",
+      },
+      fontSize: {
+        "40": "40px",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
