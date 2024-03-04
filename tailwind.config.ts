@@ -20,12 +20,16 @@ const config: Config = {
       },
       letterSpacing: {
         custom: "9.48px",
+        "1.6": "-1.6px",
       },
       lineHeight: {
         "56": "56px",
       },
       fontSize: {
         "40": "40px",
+      },
+      width: {
+        "180": "180px",
       },
     },
   },
