@@ -4,34 +4,54 @@ export const BurgerMenu = ({ closeMenu }) => {
     <section className="z-40 w-screen h-screen bg-burgerBg backdrop absolute top-0 left-0 px-5 pt-11">
       <button
         type="button"
-        className="text-white ml-auto block text-sm tracking-widest"
+        className="text-white ml-auto block text-sm tracking-widest hover:underline"
         onClick={closeMenu}
       >
         CLOSE
       </button>
       <ul className="flex flex-col  items-center pt-28 gap-y-12 text-lg tracking-widest">
         <li>
-          <Link href="#about" className="text-white" onClick={closeMenu}>
+          <Link
+            href="#about"
+            className="text-white hover:underline"
+            onClick={closeMenu}
+          >
             About
           </Link>
         </li>
         <li>
-          <Link href="#services" className="text-white " onClick={closeMenu}>
+          <Link
+            href="#services"
+            className="text-white hover:underline"
+            onClick={closeMenu}
+          >
             Services
           </Link>
         </li>
         <li>
-          <Link href="#career" className="text-white " onClick={closeMenu}>
+          <Link
+            href="#career"
+            className="text-white hover:underline"
+            onClick={closeMenu}
+          >
             Career
           </Link>
         </li>
         <li>
-          <Link href="#gallery" className="text-white " onClick={closeMenu}>
+          <Link
+            href="#gallery"
+            className="text-white hover:underline"
+            onClick={closeMenu}
+          >
             Gallery
           </Link>
         </li>
         <li>
-          <Link href="#contacts" className="text-white " onClick={closeMenu}>
+          <Link
+            href="#contacts"
+            className="text-white hover:underline"
+            onClick={closeMenu}
+          >
             Contacts
           </Link>
         </li>

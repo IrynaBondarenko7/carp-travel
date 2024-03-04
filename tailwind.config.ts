@@ -21,6 +21,7 @@ const config: Config = {
       letterSpacing: {
         custom: "9.48px",
         "1.6": "-1.6px",
+        "2.4": "2.4px",
       },
       lineHeight: {
         "56": "56px",
@@ -30,6 +31,10 @@ const config: Config = {
       },
       width: {
         "180": "180px",
+        "170": "170px",
+      },
+      margin: {
+        "top-74": "74px 0 0 0 ",
       },
     },
   },

@@ -29,7 +29,7 @@ export const Header = () => {
         </Link>
         <button
           type="button"
-          className="text-white text-base leading-normal tracking-wider"
+          className="text-white text-base leading-normal tracking-wider hover:underline"
           onClick={openMenu}
         >
           MENU
