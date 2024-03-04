@@ -15,6 +15,8 @@ const config: Config = {
       backgroundColor: {
         custom: "rgba(2, 15, 8, 0.50)",
         btn: "rgba(255, 255, 255, 0.10)",
+        btnHover: "rgba(255, 255, 255, 0.20)",
+        burgerBg: "rgba(1, 10, 5, 0.75)",
       },
       letterSpacing: {
         custom: "9.48px",

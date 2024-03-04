@@ -3,13 +3,13 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <section
-      className="absolute top-0 left-0  w-screen h-screen bg-center bg-no-repeat bg-cover"
+      className="w-screen h-screen bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: 'url("/images/hero/hero-bg-mb.png")',
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full  z-0 bg-gradient-custom opacity-75"></div>
-      <div className="flex flex-col z-10 relative pt-28  w-full px-5">
+      <div className="flex flex-col  relative pt-28  w-full px-5">
         <p className="text-white text-4xl leading-none font-thin tracking-widest text-right">
           <span className="font-medium">7</span>
           DAYS
@@ -34,7 +34,7 @@ export const Hero = () => {
         </p>
         <Link
           href="#contacts"
-          className="text-white text-center text-lg font-bold mt-7 px-16 py-3.5 bg-btn btn relative"
+          className="text-white text-center text-lg font-bold mt-7 px-16 py-3.5 bg-btn btn relative hover:bg-btnHover transition"
         >
           JOIN NOW
         </Link>
