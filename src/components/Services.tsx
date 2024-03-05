@@ -72,7 +72,8 @@ export const Services = () => {
               "text-white uppercase w-163 text-left leading-4 font-medium";
             isActive = true;
           } else {
-            serviceClass = "text-white uppercase w-170 text-left leading-4";
+            serviceClass =
+              "text-white uppercase w-170 text-left leading-4 opacity-50 hover:opacity-100";
             isActive = false;
           }
 

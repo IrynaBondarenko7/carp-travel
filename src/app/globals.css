@@ -37,3 +37,71 @@
 body.menu-open {
   overflow: hidden;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .check-text::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  opacity: 0.1;
+  background-color: #fff;
+}
+
+.input-check:checked + .check-text::before {
+  opacity: 1;
+  background-color: red;
+} */
+
+.check-text {
+  display: flex;
+  align-items: center;
+}
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.1;
+  background-color: #fff;
+  position: relative;
+  right: -4px;
+}
+.input-check:checked + .check-text::before {
+  opacity: 1;
+}
+
+.phone-input {
+  position: relative;
+}
+.phone-input::before {
+  content: "+38";
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 33px;
+  left: 8px;
+}
+.error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.error::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../../public/images/openmoji_close.svg);
+}

@@ -17,6 +17,7 @@ const config: Config = {
         btn: "rgba(255, 255, 255, 0.10)",
         btnHover: "rgba(255, 255, 255, 0.20)",
         burgerBg: "rgba(1, 10, 5, 0.75)",
+        inputBg: "rgba(255, 255, 255, 0.05)",
       },
       letterSpacing: {
         custom: "9.48px",
@@ -28,13 +29,18 @@ const config: Config = {
       },
       fontSize: {
         "40": "40px",
+        "13": "13px",
       },
       width: {
         "180": "180px",
         "170": "170px",
+        "100%": "100%",
       },
       margin: {
         "top-74": "74px 0 0 0 ",
+      },
+      colors: {
+        "#FF5757": "#FF5757",
       },
     },
   },
