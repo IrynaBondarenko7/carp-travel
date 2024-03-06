@@ -44,6 +44,8 @@ const config: Config = {
         "480": "480px",
         "768": "768px",
         "230": "230px",
+        "220": "220px",
+        "463": "463px",
       },
       margin: {
         "top-74": "74px 0 0 0 ",
@@ -56,6 +58,9 @@ const config: Config = {
       screens: {
         sm: { max: "480px" },
         smm: { max: "767px", min: "481px" },
+      },
+      gap: {
+        "76": "76px",
       },
     },
   },

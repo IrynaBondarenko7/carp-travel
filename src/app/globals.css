@@ -115,7 +115,8 @@ body.menu-open {
     url(../../public/images/gallery/mobile/bg-mb.png);
 }
 .gallery-section,
-.contacts-section {
+.contacts-section,
+.about-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -126,6 +127,14 @@ body.menu-open {
     url(../../public/images/contacts/bg-mb.png);
   opacity: 0.75;
   position: relative;
+}
+.about-section {
+  background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+    url(../../public/images/about/about-bg-mb.png);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(../../public/images/about/about-bg-tab.png);
+  }
 }
 /* 
 .contacts-section::before {
