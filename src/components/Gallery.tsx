@@ -3,7 +3,7 @@ import { mobGalerrySrc } from "./constants";
 
 export const Gallery = () => {
   return (
-    <section className="gallery-section py-14 px-5 ">
+    <section className="gallery-section py-14 px-5" id="gallery">
       <h2 className="text-white text-40 font-thin leading-56 tracking-1.6 mb-6">
         OUR <span className="font-medium ">GALLERY</span>
       </h2>

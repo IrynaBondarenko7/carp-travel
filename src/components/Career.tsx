@@ -2,7 +2,7 @@ import { CareerForm } from "./CareerForm";
 
 export const Career = () => {
   return (
-    <section className="text-white ">
+    <section className="text-white " id="career">
       <div>
         <div
           className="py-14 px-5 bg-center bg-cover"

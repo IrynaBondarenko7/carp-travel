@@ -38,6 +38,8 @@ const config: Config = {
       },
       margin: {
         "top-74": "74px 0 0 0 ",
+        "right-46": "0 46px 0 0",
+        "right-15": "0 15px 0 0",
       },
       colors: {
         "#FF5757": "#FF5757",

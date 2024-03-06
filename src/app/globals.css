@@ -109,7 +109,16 @@ body.menu-open {
 .gallery-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
     url(../../public/images/gallery/mobile/bg-mb.png);
+}
+.gallery-section,
+.contacts-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.contacts-section {
+  background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
+    url(../../public/images/contacts/bg-mb.png);
+  opacity: 0.75;
 }

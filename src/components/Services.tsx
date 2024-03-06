@@ -38,6 +38,7 @@ export const Services = () => {
           activeSlideIndex + 1
         }.png")`,
       }}
+      id="services"
     >
       <h2 className="text-white font-thin ">
         <span className="text-[40px]  uppercase leading-[56px]">WE </span>
