@@ -44,3 +44,9 @@ export const services = [
   "Skydiving",
   "Rafting",
 ];
+
+export const mobGalerrySrc = [
+  "/images/gallery/mobile/1.png",
+  "/images/gallery/mobile/2.png",
+  "/images/gallery/mobile/3.png",
+];
