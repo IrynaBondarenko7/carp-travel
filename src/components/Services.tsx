@@ -66,7 +66,7 @@ export const Services = () => {
 
   return (
     <section
-      className="bg-neutral-950 bg-opacity-50 py-[54px] sm:px-5 smm:px-5 md:px-8 bg-center bg-no-repeat bg-cover md:w-768 w-480 mx-auto h-auto"
+      className="bg-neutral-950 bg-opacity-50 py-[54px] sm:px-5 smm:px-5 md:px-8 bg-center bg-no-repeat bg-cover sm:w-screen md:w-768 w-480 mx-auto h-auto"
       style={{
         backgroundImage: `linear-gradient(rgba(2, 15, 8, 0.50),rgba(2, 15, 8, 0.50)), url("/images/services/${device}/bg-${
           activeSlideIndex + 1
