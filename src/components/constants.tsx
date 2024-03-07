@@ -20,6 +20,51 @@ export const sliderImages = [
     id: 5,
   },
 ];
+export const sliderTabImages = [
+  {
+    image: "/images/services/tablet/1.png",
+    id: 1,
+  },
+  {
+    image: "/images/services/tablet/2.png",
+    id: 2,
+  },
+  {
+    image: "/images/services/tablet/3.png",
+    id: 3,
+  },
+  {
+    image: "/images/services/tablet/2.png",
+    id: 4,
+  },
+  {
+    image: "/images/services/tablet/5.png",
+    id: 5,
+  },
+];
+
+export const sliderDeskImages = [
+  {
+    image: "/images/services/desk/1.png",
+    id: 1,
+  },
+  {
+    image: "/images/services/desk/2.png",
+    id: 2,
+  },
+  {
+    image: "/images/services/desk/3.png",
+    id: 3,
+  },
+  {
+    image: "/images/services/desk/2.png",
+    id: 4,
+  },
+  {
+    image: "/images/services/desk/5.png",
+    id: 5,
+  },
+];
 
 export const sliderTitle = [
   "Feel the adrenaline rush",

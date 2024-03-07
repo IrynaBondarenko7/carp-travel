@@ -50,7 +50,7 @@ export const SliderComponent: FC<SliderComponentProps> = ({
               <img
                 src={item.image}
                 alt={services[index]}
-                className="mx-auto "
+                className="mx-auto md:w-466 md:h-370 md:object-cover"
               />
             </div>
           </SwiperSlide>

@@ -31,11 +31,14 @@ const config: Config = {
       lineHeight: {
         "56": "56px",
         "70": "70px",
+        "18": "18px",
       },
       fontSize: {
         "40": "40px",
         "13": "13px",
         "67": "67px",
+        "43": "43px",
+        "22": "22px",
       },
       width: {
         "180": "180px",
@@ -46,6 +49,11 @@ const config: Config = {
         "230": "230px",
         "220": "220px",
         "463": "463px",
+        "466": "466px",
+        "186": "186px",
+      },
+      height: {
+        "370": "370px",
       },
       margin: {
         "top-74": "74px 0 0 0 ",
@@ -61,6 +69,7 @@ const config: Config = {
       },
       gap: {
         "76": "76px",
+        "170": "170px",
       },
     },
   },
