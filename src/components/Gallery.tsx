@@ -1,13 +1,18 @@
+"use client";
 import Image from "next/image";
-import { mobGalerrySrc } from "./constants";
+import { mobGalerrySrc, sliderImages } from "./constants";
+import { GallerySlider } from "./GallarySlider";
 
 export const Gallery = () => {
   return (
-    <section className="gallery-section py-14 px-5" id="gallery">
-      <h2 className="text-white text-40 font-thin leading-56 tracking-1.6 mb-6">
+    <section
+      className="gallery-section py-14 px-5 md:w-768 w-480 mx-auto h-full md:pb-12 sm:w-screen"
+      id="gallery"
+    >
+      <h2 className="text-white text-40 font-thin leading-56 tracking-1.6 mb-6 md:text-67 md:tracking-2.68 md:pb-16 md:text-center">
         OUR <span className="font-medium ">GALLERY</span>
       </h2>
-      <ul className="flex flex-col gap-6 items-center">
+      <ul className="flex flex-col gap-6 items-center md:hidden">
         {mobGalerrySrc.map((src, index) => {
           return (
             <li key={index}>
@@ -16,6 +21,9 @@ export const Gallery = () => {
           );
         })}
       </ul>
+      <div className="hidden md:block">
+        <GallerySlider />
+      </div>
     </section>
   );
 };

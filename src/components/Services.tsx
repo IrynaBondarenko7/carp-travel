@@ -25,6 +25,8 @@ export const Services = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const swiperRef = useRef<SwiperRef | null>(null);
 
+  const sliderStyles = "mx-auto md:w-466 md:h-370 md:object-cover";
+
   const handleSlideClick = (index: number) => {
     setActiveSlideIndex(index);
     setTitleIndex(index);
@@ -91,6 +93,7 @@ export const Services = () => {
           data={sliderData}
           activeIndex={activeSlideIndex}
           onSlideChange={handleSlideClick}
+          sliderStyles={sliderStyles}
         />
         <div className="md:flex md:flex-col md:gap-9">
           <div className="md:flex md:flex-col-reverse md:gap-6">

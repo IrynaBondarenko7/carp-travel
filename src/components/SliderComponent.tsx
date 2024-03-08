@@ -15,12 +15,14 @@ interface SliderComponentProps {
   data: Img[];
   activeIndex: number;
   onSlideChange: (index: number) => void;
+  sliderStyles: string;
 }
 
 export const SliderComponent: FC<SliderComponentProps> = ({
   data,
   activeIndex,
   onSlideChange,
+  sliderStyles,
 }) => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
     null
@@ -39,6 +41,7 @@ export const SliderComponent: FC<SliderComponentProps> = ({
         onSlideChange={(swiper) => onSlideChange(swiper.activeIndex)}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
         slidesPerView={1}
+        effect={"fade"}
       >
         {data.map((item, index) => (
           <SwiperSlide key={item.id}>
@@ -50,7 +53,7 @@ export const SliderComponent: FC<SliderComponentProps> = ({
               <img
                 src={item.image}
                 alt={services[index]}
-                className="mx-auto md:w-466 md:h-370 md:object-cover"
+                className={sliderStyles}
               />
             </div>
           </SwiperSlide>

@@ -95,3 +95,30 @@ export const mobGalerrySrc = [
   "/images/gallery/mobile/2.png",
   "/images/gallery/mobile/3.png",
 ];
+
+export const sliderGalleryTabImages = [
+  {
+    image: "/images/gallery/tablet/1.png",
+    id: 1,
+  },
+  {
+    image: "/images/gallery/tablet/2.png",
+    id: 2,
+  },
+  {
+    image: "/images/gallery/tablet/3.png",
+    id: 3,
+  },
+  {
+    image: "/images/gallery/tablet/1.png",
+    id: 4,
+  },
+  {
+    image: "/images/gallery/tablet/2.png",
+    id: 5,
+  },
+  {
+    image: "/images/gallery/tablet/3.png",
+    id: 6,
+  },
+];
