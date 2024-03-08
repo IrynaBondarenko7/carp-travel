@@ -27,6 +27,9 @@ const config: Config = {
         "8.71": "8.71px",
         "25.9": "25.9px",
         "2.68": "-2.68px",
+        "3.92": "-3.92px",
+        "36.48": "36.48px",
+        "3.71": "3.71px",
       },
       lineHeight: {
         "56": "56px",
@@ -39,6 +42,8 @@ const config: Config = {
         "67": "67px",
         "43": "43px",
         "22": "22px",
+        "98": "98px",
+        "32": "32px",
       },
       width: {
         "180": "180px",
@@ -54,6 +59,8 @@ const config: Config = {
         "222": "222px",
         "225": "225px",
         "50%": "calc((100% - 40px)/2)",
+        "1440": "1440px",
+        "294": "294px",
       },
       height: {
         "370": "370px",
@@ -64,12 +71,17 @@ const config: Config = {
         "right-46": "0 46px 0 0",
         "right-15": "0 15px 0 0",
       },
+      padding: {
+        "x-104": "0 104px 0 104px",
+      },
       colors: {
         "#FF5757": "#FF5757",
       },
       screens: {
         sm: { max: "480px" },
         smm: { max: "767px", min: "481px" },
+        xl: { min: "1200px", max: "1440px" },
+        "2xl": { min: "1440px" },
       },
       gap: {
         "76": "76px",

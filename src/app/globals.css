@@ -46,6 +46,20 @@
     right: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .btn::before {
+    content: url("/images/group-62.svg");
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+  .btn::after {
+    content: url("/images/group-63.svg");
+    position: absolute;
+    top: -1px;
+    right: 0;
+  }
+}
 
 .backdrop {
   backdrop-filter: blur(25px);
@@ -133,7 +147,7 @@ body.menu-open {
 .contacts-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
     url(../../public/images/contacts/bg-mb.png);
-  opacity: 0.75;
+  /* opacity: 0.75; */
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
@@ -151,13 +165,18 @@ body.menu-open {
   }
 }
 
-.header-section {
+.hero-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
     url(../../public/images/hero/hero-bg-mb.png);
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(../../public/images/hero/hero-bg-tab.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(../../public/images/hero/hero-bg-desk.png);
   }
 }
 

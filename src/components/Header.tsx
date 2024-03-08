@@ -23,7 +23,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="pt-9 px-5  z-10 absolute top-0  sm:w-screen w-480 left-1/2 -translate-x-1/2 md:w-768 md:px-8">
+    <header className="pt-9 px-5  z-10 absolute top-0  sm:w-screen w-480 left-1/2 -translate-x-1/2 md:w-768 md:px-8 xl:w-100% 2xl:w-1440 xl:p-x-104 xl:pt-12">
       <div className="flex justify-between">
         <Link href="/">
           <Image src="/images/logo.svg" width={61} height={33} alt="logo" />

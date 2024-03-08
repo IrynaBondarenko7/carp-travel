@@ -2,7 +2,10 @@ import { ContactsForm } from "./ContactsForm";
 
 export const Contacts = () => {
   return (
-    <section className="contacts-section py-14 px-5 md:w-768 w-480 mx-auto h-auto sm:w-screen md:px-8 md:py-16">
+    <section
+      className="contacts-section py-14 px-5 md:w-768 w-480 mx-auto h-auto sm:w-screen md:px-8 md:py-16"
+      id="contacts"
+    >
       <h2 className="text-white text-40 font-thin leading-56 tracking-1.6 mb-6 uppercase md:text-67 md:tracking-2.68 md:mb-9">
         Contact <span className="font-medium">US</span>
       </h2>
