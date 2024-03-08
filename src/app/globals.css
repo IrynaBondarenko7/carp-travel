@@ -134,7 +134,13 @@ body.menu-open {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
     url(../../public/images/contacts/bg-mb.png);
   opacity: 0.75;
-  position: relative;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(2, 15, 8, 0.75),
+        rgba(2, 15, 8, 0.75)
+      ),
+      url(../../public/images/contacts/bg-tab.png);
+  }
 }
 .about-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
@@ -269,4 +275,8 @@ body.menu-open {
     rgba(2, 15, 8, 0.75),
     rgba(2, 15, 8, 0.75)
   );
+}
+
+.custom-left {
+  left: 30px;
 }
