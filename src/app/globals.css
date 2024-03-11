@@ -163,6 +163,10 @@ body.menu-open {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(../../public/images/about/about-bg-tab.png);
   }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
+      url(../../public/images/about/about-bg-desk.png);
+  }
 }
 
 .hero-section {

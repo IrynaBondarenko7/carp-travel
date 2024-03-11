@@ -3,8 +3,8 @@ import { Slogan } from "./Slogan";
 
 export const Hero = () => {
   return (
-    <section className="sm:w-screen sm:pb-14  bg-center bg-no-repeat bg-cover hero-section md:w-768 w-480 mx-auto h-auto md:pb-12  xl:w-100% 2xl:w-1440">
-      <div className="flex flex-col  relative pt-28  w-full sm:px-5 smm:px-5 md:flex-row md:px-8 md:pt-32 md:gap-12 xl:justify-center xl:p-x-104 xl:pt-32 xl:gap-0 xl:justify-between">
+    <section className="sm:w-screen sm:pb-14  bg-center bg-no-repeat bg-cover hero-section md:w-768 w-480 mx-auto h-auto md:pb-12  xl:w-100% 2xl:w-1440 xl:p-b-104">
+      <div className="flex flex-col  relative pt-28  w-full sm:px-5 smm:px-5 md:flex-row md:px-8 md:pt-32 md:gap-12  xl:p-x-104 xl:pt-32 xl:gap-0 xl:justify-between">
         <div className="md:hidden">
           <Slogan />
         </div>
