@@ -213,6 +213,13 @@ body.menu-open {
       ),
       url(../../public/images/career/bg-tab.png);
   }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(2, 15, 8, 0.75),
+        rgba(2, 15, 8, 0.75)
+      ),
+      url(../../public/images/career/bg-desk.png);
+  }
 }
 
 .gallary-slider .swiper-slide-prev {
@@ -311,5 +318,11 @@ body.menu-open {
 
   .services-slider.swiper {
     margin: 0 !important;
+  }
+}
+
+.top-220 {
+  @media screen and (min-width: 1200px) {
+    top: 220px;
   }
 }

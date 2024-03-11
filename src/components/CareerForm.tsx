@@ -64,11 +64,11 @@ export const CareerForm = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 md:pl-0"
+      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 md:pl-0 xl:p-0"
     >
       <Toaster position="top-center" reverseOrder={false} />
-      <ul className="flex flex-col gap-1 md:flex-row md:gap-5">
-        <li className="md:w-222">
+      <ul className="flex flex-col gap-1 md:flex-row md:gap-5 xl:gap-6">
+        <li className="md:w-222 xl:w-292">
           <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
             <span className={nameLabelError}>Full name</span>
             <input
@@ -100,12 +100,13 @@ export const CareerForm = () => {
               })}
               placeholder="ohnsmith@email.com"
             />
+            {errors.email && (
+              <div className="error text-#FF5757 text-xs font-extralight tracking-2.4 ml-auto">
+                {errors.email.message}
+              </div>
+            )}
           </label>
-          {errors.email && (
-            <div className="error text-#FF5757 text-xs font-extralight tracking-2.4 ml-auto">
-              {errors.email.message}
-            </div>
-          )}
+
           <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
             <span>Position</span>
             <input
@@ -130,18 +131,18 @@ export const CareerForm = () => {
               })}
               placeholder="(097) 12 34 567"
             />
+            {errors.phone && (
+              <div className="error text-#FF5757 text-xs font-extralight tracking-2.4 ml-auto">
+                {errors.phone.message}
+              </div>
+            )}
           </label>
-          {errors.phone && (
-            <div className="error text-#FF5757 text-xs font-extralight tracking-2.4 ml-auto">
-              {errors.phone.message}
-            </div>
-          )}
         </li>
-        <li>
+        <li className="xl:w-292">
           <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
             <span>Message</span>
             <textarea
-              className="bg-inputBg pl-2 py-0.5 text-xl font-extralight h-48 focus:outline-white focus:outline-1 resize-none"
+              className="bg-inputBg pl-2 py-0.5 text-xl font-extralight h-48 focus:outline-white focus:outline-1 resize-none xl:h-64"
               {...register("message")}
             />
           </label>
@@ -158,7 +159,7 @@ export const CareerForm = () => {
             />
             <label
               htmlFor="privacy"
-              className="check-text text-xs font-extralight leading-6 flex gap-4 md:w-48"
+              className="check-text text-xs font-extralight leading-6 flex gap-4 md:w-48 xl:w-72"
             >
               <span className="inline-block w-6 h-6 border border-white absolute"></span>
               <span>
