@@ -22,12 +22,12 @@ export const Career = () => {
             <CarreerList />
           </div>
         </div>
-        <div className="md:flex md:px-8 md:gap-5 xl:p-0 xl:gap-6">
-          <div className="hidden md:block xl:pl-8">
+        <div className="md:flex md:px-8 md:gap-5 xl:p-0 xl:gap-6 xl:50%">
+          <div className="hidden md:block 2xl:pl-8">
             <CarreerList />
           </div>
           <div className="py-14 sm:px-5 smm:px-5 bg-center bg-cover career-section-bottom md:py-0 ">
-            <p className="text-sm font-extralight leading-5 w-180 text-left ml-auto md:ml-0 md:text-13 xl:absolute top-220 ">
+            <p className="text-sm font-extralight leading-5 w-180 text-left ml-auto md:ml-0 md:text-13 xl:absolute top-220 xl:text-lg xl:leading-6 xl:w-60">
               Don&#39;t miss your opportunity! Fill out the form right now and
               join our team!
             </p>
