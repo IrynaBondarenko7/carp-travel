@@ -303,3 +303,13 @@ body.menu-open {
 .custom-left {
   left: 30px;
 }
+
+@media screen and (min-width: 1200px) {
+  .services-slider .swiper-wrapper {
+    width: 608px !important;
+  }
+
+  .services-slider.swiper {
+    margin: 0 !important;
+  }
+}

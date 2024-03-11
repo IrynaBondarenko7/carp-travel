@@ -42,6 +42,7 @@ export const SliderComponent: FC<SliderComponentProps> = ({
         onSwiper={(swiper) => setSwiperInstance(swiper)}
         slidesPerView={1}
         effect={"fade"}
+        className="services-slider"
       >
         {data.map((item, index) => (
           <SwiperSlide key={item.id}>

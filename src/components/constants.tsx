@@ -57,7 +57,7 @@ export const sliderDeskImages = [
     id: 3,
   },
   {
-    image: "/images/services/desk/2.png",
+    image: "/images/services/desk/4.png",
     id: 4,
   },
   {
