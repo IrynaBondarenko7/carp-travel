@@ -64,12 +64,12 @@ export const ContactsForm = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 text-white md:p-0 md:pt-16 "
+      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 text-white md:p-0 md:pt-16 xl:pt-0"
     >
       <Toaster position="top-center" reverseOrder={false} />
-      <div className="flex flex-col gap-1 md:flex-row md:gap-5">
-        <div className="flex flex-col md:gap-7 md:w-222">
-          <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
+      <div className="flex flex-col gap-1 md:flex-row md:gap-5 xl:flex-col xl:gap-10">
+        <div className="flex flex-col md:gap-7 md:w-222 xl:flex-row xl:w-100%">
+          <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1 xl:w-100%">
             <span className={nameLabelError}>Full name</span>
             <input
               className={nameInput}
@@ -89,7 +89,7 @@ export const ContactsForm = () => {
             )}
           </label>
 
-          <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
+          <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1 xl:w-100%">
             <span className={emailLabelError}>E-mail</span>
             <input
               className={emailInput}
@@ -108,7 +108,7 @@ export const ContactsForm = () => {
             )}
           </label>
         </div>
-        <div className="flex flex-col gap-4 md:w-463">
+        <div className="flex flex-col gap-4 md:w-463 xl:w-100% xl:gap-6">
           <label className="text-xs font-extralight leading-6 tracking-2.4 flex flex-col gap-1">
             <span>Message</span>
             <textarea
