@@ -1,30 +1,58 @@
-import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
+
 export const Nav = () => {
   return (
     <nav className="hidden md:block">
       <ul className="text-white flex gap-6 text-sm tracking-1.4">
         <li>
-          <Link href="#about" className="hover:underline">
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            className="hover:underline"
+          >
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="#services" className="hover:underline">
+          <ScrollLink
+            to="services"
+            smooth={true}
+            duration={500}
+            className="hover:underline"
+          >
             Services
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="#career" className="hover:underline">
+          <ScrollLink
+            to="career"
+            smooth={true}
+            duration={500}
+            className="hover:underline"
+          >
             Career
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link href="#gallery">Gallery</Link>
+          <ScrollLink
+            to="gallery"
+            smooth={true}
+            duration={500}
+            className="hover:underline"
+          >
+            Gallery
+          </ScrollLink>
         </li>
         <li>
-          <Link href="#contacts" className="hover:underline">
+          <ScrollLink
+            to="contacts"
+            smooth={true}
+            duration={500}
+            className="hover:underline"
+          >
             Contacts
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
     </nav>

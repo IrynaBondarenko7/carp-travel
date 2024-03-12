@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { Slogan } from "./Slogan";
 
 export const Hero = () => {
@@ -28,12 +30,14 @@ export const Hero = () => {
             Carpathians. Enjoy stunning views, exciting expeditions, and the
             best service!
           </p>
-          <Link
-            href="#contacts"
+          <ScrollLink
+            to="contacts"
+            smooth={true}
+            duration={500}
             className="text-white text-center text-lg font-bold mt-7 px-16 sm:py-3.5 smm:py-3.5 bg-btn btn relative hover:bg-btnHover transition block md:py-3 xl:text-32 xl:py-5"
           >
             JOIN NOW
-          </Link>
+          </ScrollLink>
         </div>
       </div>
     </section>
