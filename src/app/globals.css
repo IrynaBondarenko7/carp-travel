@@ -200,18 +200,16 @@ body.menu-open {
   }
 }
 
-.career-section-top {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .career-section-top {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
       url(../../public/images/career/bg-mb.png);
   }
-}
 
-.career-section-bottom {
-  @media screen and (max-width: 767px) {
+  .career-section-bottom {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
@@ -229,6 +227,7 @@ body.menu-open {
       ),
       url(../../public/images/career/bg-tab.png);
   }
+
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
