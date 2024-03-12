@@ -34,7 +34,7 @@ export const Hero = () => {
             to="contacts"
             smooth={true}
             duration={500}
-            className="text-white text-center text-lg font-bold mt-7 px-16 sm:py-3.5 smm:py-3.5 bg-btn btn relative hover:bg-btnHover transition block md:py-3 xl:text-32 xl:py-5"
+            className="text-white text-center text-lg font-bold mt-7 px-16 sm:py-3.5 smm:py-3.5 bg-btn btn relative hover:bg-btnHover transition block md:py-3 xl:text-32 xl:py-5 cursor-pointer"
           >
             JOIN NOW
           </ScrollLink>
