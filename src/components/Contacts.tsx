@@ -10,7 +10,7 @@ export const Contacts = () => {
         Contact <span className="font-medium">US</span>
       </h2>
       <div className="xl:flex xl:flex-row 2xl:gap-48">
-        <address className="text-white flex flex-col gap-6 items-end w-100% mb-3 md:flex-wrap md:flex-row md:items-baseline md:relative md:pl-16 xl:flex-col xl:gap-16">
+        <address className="text-white flex flex-col gap-6 items-end w-100% mb-3 md:flex-wrap md:flex-row md:items-baseline md:relative md:pl-16 xl:flex-col xl:gap-16 not-italic">
           <ul className="flex gap-5 items-baseline md:w-50% xl:w-100%">
             <li className="xl:w-1/2">
               <ul className="flex flex-col">
@@ -19,7 +19,7 @@ export const Contacts = () => {
                     href="tel:+380981234567"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     +38 (098) 12 34 567
                   </a>
@@ -29,7 +29,7 @@ export const Contacts = () => {
                     href="tel:+380731234567"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     +38 (073) 12 34 567
                   </a>
@@ -46,7 +46,7 @@ export const Contacts = () => {
                 href="mailto:support@carptravel.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
               >
                 support@carptravel.com
               </a>
@@ -67,7 +67,7 @@ export const Contacts = () => {
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     facebook
                   </a>
@@ -77,7 +77,7 @@ export const Contacts = () => {
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     instagram
                   </a>
@@ -87,7 +87,7 @@ export const Contacts = () => {
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     youtube
                   </a>
@@ -97,7 +97,7 @@ export const Contacts = () => {
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm leading-6 hover:underline md:text-base xl:text-lg xl:leading-6"
+                    className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
                   >
                     tiktok
                   </a>

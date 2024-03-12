@@ -46,7 +46,7 @@
     right: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .btn::before {
     content: url("/images/group-62.svg");
     position: absolute;
@@ -134,7 +134,7 @@ body.menu-open {
       ),
       url(../../public/images/gallery/tablet/bg-tab.png);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
@@ -179,7 +179,7 @@ body.menu-open {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(../../public/images/about/about-bg-tab.png);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(../../public/images/about/about-bg-desk.png);
   }
@@ -194,7 +194,7 @@ body.menu-open {
       url(../../public/images/hero/hero-bg-tab.png);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
       url(../../public/images/hero/hero-bg-desk.png);
   }
@@ -241,7 +241,7 @@ body.menu-open {
   transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(0) scale(1) !important;
   width: 121px !important;
   top: 120px !important;
-  @media screen and (min-width: 1200px) and (max-width: 1439px) {
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
     width: 220px !important;
   }
 
@@ -255,7 +255,7 @@ body.menu-open {
     scale(1) !important;
   width: 121px !important;
   top: 120px !important;
-  @media screen and (min-width: 1200px) and (max-width: 1439px) {
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
     width: 220px !important;
   }
 
@@ -268,7 +268,7 @@ body.menu-open {
   width: 415px !important;
   transform: translate3d(0px, 0px, -43.9815px) rotateX(0deg) rotateY(0deg)
     scale(1) !important;
-  @media screen and (min-width: 1200px) and (max-width: 1439px) {
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
     width: 505px !important;
   }
 

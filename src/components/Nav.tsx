@@ -9,7 +9,7 @@ export const Nav = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className="cursor-pointer transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
           >
             About
           </ScrollLink>
@@ -19,7 +19,7 @@ export const Nav = () => {
             to="services"
             smooth={true}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className="cursor-pointer transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
           >
             Services
           </ScrollLink>
@@ -29,7 +29,7 @@ export const Nav = () => {
             to="career"
             smooth={true}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className="cursor-pointer transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
           >
             Career
           </ScrollLink>
@@ -39,7 +39,7 @@ export const Nav = () => {
             to="gallery"
             smooth={true}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className="cursor-pointer transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
           >
             Gallery
           </ScrollLink>
@@ -49,7 +49,7 @@ export const Nav = () => {
             to="contacts"
             smooth={true}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className="cursor-pointer transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
           >
             Contacts
           </ScrollLink>

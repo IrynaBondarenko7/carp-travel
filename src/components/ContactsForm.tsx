@@ -118,7 +118,7 @@ export const ContactsForm = () => {
           </label>
 
           <button
-            className="text-3xl font-medium ml-auto block hover:underline"
+            className="text-3xl font-medium ml-auto block transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
             type="submit"
             onClick={() => {}}
           >

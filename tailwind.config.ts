@@ -90,7 +90,7 @@ const config: Config = {
       screens: {
         sm: { max: "480px" },
         smm: { max: "767px", min: "481px" },
-        xl: { min: "1200px" },
+        xl: { min: "1280px" },
         "2xl": { min: "1440px" },
       },
       gap: {

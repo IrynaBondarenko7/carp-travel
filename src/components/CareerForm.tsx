@@ -55,7 +55,7 @@ export const CareerForm = () => {
   if (errors.fullname) {
     nameLabelError = "text-#FF5757";
     nameInput =
-      "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-#FF5757";
+      "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-#FF5757 transition duration-500 ease-in-out";
   } else {
     nameInput =
       "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
@@ -150,7 +150,7 @@ export const CareerForm = () => {
       </ul>
       <ul className="flex flex-col gap-4 md:flex-row md:justify-between">
         <li>
-          <div className="relative">
+          <div className="relative ">
             <input
               type="checkbox"
               {...register("checkbox")}
@@ -159,7 +159,7 @@ export const CareerForm = () => {
             />
             <label
               htmlFor="privacy"
-              className="check-text text-xs font-extralight leading-6 flex gap-4 md:w-48 xl:w-72"
+              className="check-text text-xs font-extralight leading-6 flex gap-4 md:w-48 xl:w-72 cursor-pointer"
             >
               <span className="inline-block w-6 h-6 border border-white absolute"></span>
               <span>
@@ -170,7 +170,7 @@ export const CareerForm = () => {
         </li>
         <li>
           <button
-            className="text-3xl font-medium ml-auto block hover:underline"
+            className="text-3xl font-medium ml-auto block transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
             type="submit"
             onClick={() => {}}
           >
