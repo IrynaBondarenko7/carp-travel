@@ -14,6 +14,7 @@ import {
   sliderTabImages,
   sliderDeskImages,
 } from "./constants";
+import { getServiceInfo, type ServiceInfo } from "./getServiceInfo";
 
 export const Services = () => {
   const [sliderData, setSliderData] = useState<Img[]>(sliderImages);
@@ -103,17 +104,10 @@ export const Services = () => {
             </h2>
             <ul className="pt-6 flex flex-col gap-y-4 font-extralight text-xl md:pt-0 md:text-22 xl:gap-y-6">
               {services.map((service, index) => {
-                let serviceClass = "";
-                let isActive = false;
-                if (index === activeSlideIndex) {
-                  serviceClass =
-                    "text-white uppercase w-163 text-left leading-4 font-medium md:w-186 md:leading-18 xl:text-28 xl:w-60 xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white focus:outline-1 focus:p-2";
-                  isActive = true;
-                } else {
-                  serviceClass =
-                    "text-white uppercase w-170 text-left leading-4 opacity-50 hover:opacity-100 md:w-186 md:leading-18 xl:text-28 xl:w-60 xl:leading-6 transition duration-500 ease-in-out focus:outline-white focus:outline-1 focus:opacity-100 focus:p-2";
-                  isActive = false;
-                }
+                const { isActive, serviceClass }: ServiceInfo = getServiceInfo(
+                  index,
+                  activeSlideIndex
+                );
 
                 return (
                   <li key={index} className="flex gap-1.5 items-center">

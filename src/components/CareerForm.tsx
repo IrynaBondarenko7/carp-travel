@@ -61,6 +61,8 @@ export const CareerForm = () => {
       "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
   }
 
+  console.log(errors);
+
   return (
     <form
       onSubmit={onSubmit}
@@ -153,7 +155,7 @@ export const CareerForm = () => {
           <div className="relative ">
             <input
               type="checkbox"
-              {...register("checkbox")}
+              {...register("checkbox", { required: "Required field" })}
               id="privacy"
               className="input-check visually-hidden"
             />
@@ -166,6 +168,11 @@ export const CareerForm = () => {
                 I confirm my consent to the processing of personal data.
               </span>
             </label>
+            {errors.checkbox && (
+              <div className="error text-#FF5757 text-xs font-extralight tracking-2.4 ml-auto justify-end">
+                {errors.checkbox.message}
+              </div>
+            )}
           </div>
         </li>
         <li>
