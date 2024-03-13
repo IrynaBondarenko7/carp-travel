@@ -64,7 +64,7 @@ export const Contacts = () => {
               <ul className="flex flex-col ">
                 <li className="xl:text-right">
                   <a
-                    href="http://"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
@@ -74,7 +74,7 @@ export const Contacts = () => {
                 </li>
                 <li className="xl:text-right">
                   <a
-                    href="http://"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
@@ -84,7 +84,7 @@ export const Contacts = () => {
                 </li>
                 <li className="xl:text-right">
                   <a
-                    href="http://"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"
@@ -94,7 +94,7 @@ export const Contacts = () => {
                 </li>
                 <li className="xl:text-right">
                   <a
-                    href="http://"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm leading-6 md:text-base xl:text-lg xl:leading-6 transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white"

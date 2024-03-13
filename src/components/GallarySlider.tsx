@@ -25,7 +25,10 @@ export const GallerySlider = () => {
         modifier: 1,
         slideShadows: true,
       }}
-      navigation={true}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
       modules={[EffectCoverflow, Navigation]}
       className="gallary-slider"
       loop={true}
@@ -38,6 +41,12 @@ export const GallerySlider = () => {
           </SwiperSlide>
         );
       })}
+      <button className="swiper-button-next transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white">
+        NEXT
+      </button>
+      <button className="swiper-button-prev transition duration-500 ease-in-out border-b border-transparent hover:border-white focus:outline-white">
+        BACK
+      </button>
     </Swiper>
   );
 };
