@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -16,23 +17,25 @@ export const ContactsForm = () => {
   const {
     register,
     handleSubmit,
+    setValue,
+    watch,
     formState: { errors },
   } = useForm<FormData>();
-  const onSubmit = handleSubmit((data) =>
-    toast.success("Thank you! We will contact you soon")
-  );
-
-  const phonePattern =
-    /^(\(\d{3}\)\d{7}|\d{9}|\(\d{3}\)\s?\d{2}\s?\d{2}\s?\d{3})$/;
+  const onSubmit = handleSubmit((data) => {
+    toast.success("Thank you! We will contact you soon");
+    setValue("fullname", "");
+    setValue("email", "");
+    setValue("message", "");
+    setValue("checkbox", "");
+    localStorage.removeItem("contactsFormData");
+  });
 
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
   let emailLabelError;
-  let phoneLabelError;
   let nameLabelError;
   let emailInput;
   let nameInput;
-  let phoneInput;
 
   if (errors.email) {
     emailLabelError = "text-#FF5757";
@@ -43,15 +46,6 @@ export const ContactsForm = () => {
       "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
   }
 
-  if (errors.phone) {
-    phoneLabelError = "text-#FF5757";
-    phoneInput =
-      "bg-inputBg pl-14 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-#FF5757";
-  } else {
-    phoneInput =
-      "bg-inputBg pl-14 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
-  }
-
   if (errors.fullname) {
     nameLabelError = "text-#FF5757";
     nameInput =
@@ -60,6 +54,20 @@ export const ContactsForm = () => {
     nameInput =
       "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
   }
+
+  const watchContactsForm = watch((data) => {
+    localStorage.setItem("contactsFormData", JSON.stringify(data));
+  });
+
+  useEffect(() => {
+    const savedFormData = localStorage.getItem("contactsFormData");
+    if (savedFormData !== null) {
+      const result = JSON.parse(savedFormData);
+      setValue("fullname", result.fullname);
+      setValue("email", result.email);
+      setValue("message", result.message);
+    }
+  }, [setValue]);
 
   return (
     <form

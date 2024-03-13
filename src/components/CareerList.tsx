@@ -1,4 +1,4 @@
-export const CarreerList = () => {
+export const CareerList = () => {
   return (
     <ul className="pt-9 flex flex-col gap-4 items-start w-180 md:pt-0 md:w-225 xl:w-100% 2xl:w-562 xl:gap-6">
       <li>

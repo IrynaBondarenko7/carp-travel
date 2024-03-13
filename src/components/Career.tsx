@@ -1,5 +1,5 @@
 import { CareerForm } from "./CareerForm";
-import { CarreerList } from "./CarreerList";
+import { CareerList } from "./CareerList";
 
 export const Career = () => {
   return (
@@ -19,12 +19,12 @@ export const Career = () => {
             Why us ?
           </p>
           <div className="md:hidden">
-            <CarreerList />
+            <CareerList />
           </div>
         </div>
         <div className="md:flex md:px-8 md:gap-5 xl:p-0 xl:gap-6 xl:50%">
           <div className="hidden md:block 2xl:pl-8">
-            <CarreerList />
+            <CareerList />
           </div>
           <div className="py-14 sm:px-5 smm:px-5 bg-center bg-cover career-section-bottom md:py-0 ">
             <p className="text-sm font-extralight leading-5 w-180 text-left ml-auto md:ml-0 md:text-13 xl:absolute top-220 xl:text-lg xl:leading-6 xl:w-60">

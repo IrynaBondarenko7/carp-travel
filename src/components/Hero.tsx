@@ -11,12 +11,12 @@ export const Hero = () => {
           <Slogan />
         </div>
         <div>
-          <p className="text-white text-40 sm:leading-56 smm:leading-56 sm:tracking-tight smm:tracking-tight uppercase font-thin pt-6 md:pt-0 md:text-67 md:tracking-2.68 md:leading-70 xl:text-98 xl:tracking-3.92 xl:leading-normal">
+          <h1 className="text-white text-40 sm:leading-56 smm:leading-56 sm:tracking-tight smm:tracking-tight uppercase font-thin pt-6 md:pt-0 md:text-67 md:tracking-2.68 md:leading-70 xl:text-98 xl:tracking-3.92 xl:leading-normal">
             <span className="font-medium">Uncover</span>
             <br />
             Carpathian’s <br />
             Secrets
-          </p>
+          </h1>
           <p className="text-white text-xs font-extralight sm:pt-6 smm:pt-6 md:pt-16 xl:pt-36 w-48 xl:w-100% xl:text-base xl:tracking-widest">
             Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
           </p>

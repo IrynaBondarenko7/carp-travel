@@ -1,5 +1,6 @@
 "use client";
 import * as React from "react";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -16,11 +17,37 @@ export const CareerForm = () => {
   const {
     register,
     handleSubmit,
+    setValue,
+    watch,
     formState: { errors },
   } = useForm<FormData>();
-  const onSubmit = handleSubmit((data) =>
-    toast.success("Thank you! We will contact you soon")
-  );
+
+  const onSubmit = handleSubmit((data) => {
+    toast.success("Thank you! We will contact you soon");
+    setValue("fullname", "");
+    setValue("email", "");
+    setValue("phone", "");
+    setValue("position", "");
+    setValue("message", "");
+    setValue("checkbox", "");
+    localStorage.removeItem("formData");
+  });
+
+  const watchCareerForm = watch((data) => {
+    localStorage.setItem("formData", JSON.stringify(data));
+  });
+
+  useEffect(() => {
+    const savedFormData = localStorage.getItem("formData");
+    if (savedFormData !== null) {
+      const result = JSON.parse(savedFormData);
+      setValue("fullname", result.fullname);
+      setValue("email", result.email);
+      setValue("phone", result.phone);
+      setValue("position", result.position);
+      setValue("message", result.message);
+    }
+  }, [setValue]);
 
   const phonePattern =
     /^(\(\d{3}\)\d{7}|\d{9}|\(\d{3}\)\s?\d{2}\s?\d{2}\s?\d{3})$/;
@@ -60,8 +87,6 @@ export const CareerForm = () => {
     nameInput =
       "bg-inputBg pl-2 py-0.5 text-xl font-extralight placeholder:opacity-20 placeholder:text-xl focus:outline-white focus:outline-1 text-white";
   }
-
-  console.log(errors);
 
   return (
     <form
