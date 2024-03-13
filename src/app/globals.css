@@ -126,20 +126,33 @@ body.menu-open {
 
 .gallery-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
-    url(../../public/images/gallery/mobile/bg-mb.png);
+    image-set(
+      url(../../public/images/gallery/mobile/bg-mb.png) 1x,
+      url(../../public/images/gallery/mobile/bg-mb-2x.png) 2x,
+      url(../../public/images/gallery/mobile/bg-mb-3x.png) 3x
+    );
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/gallery/tablet/bg-tab.png);
+      image-set(
+        url(../../public/images/gallery/tablet/bg-tab.png) 1x,
+        url(../../public/images/gallery/tablet/bg-tab-2x.png) 2x,
+        url(../../public/images/gallery/tablet/bg-tab-3x.png) 3x
+      );
   }
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/gallery/desk/bg-desk.png);
+      image-set(
+        url(../../public/images/gallery/desk/bg-desk.png) 1x,
+        url(../../public/images/gallery/desk/bg-desk-2x.png) 2x,
+        url(../../public/images/gallery/desk/bg-desk-3x.png) 3x
+      );
   }
 }
 .gallery-section,
@@ -155,48 +168,84 @@ body.menu-open {
 
 .contacts-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)),
-    url(../../public/images/contacts/bg-mb.png);
+    image-set(
+      url(../../public/images/contacts/bg-mb.png) 1x,
+      url(../../public/images/contacts/bg-mb-2x.png) 2x,
+      url(../../public/images/contacts/bg-mb-3x.png) 3x
+    );
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/contacts/bg-tab.png);
+      image-set(
+        url(../../public/images/contacts/bg-tab.png) 1x,
+        url(../../public/images/contacts/bg-tab-2x.png) 2x,
+        url(../../public/images/contacts/bg-tab-3x.png) 3x
+      );
   }
   @media screen and (min-width: 1440px) {
     background-image: linear-gradient(
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/contacts/bg-desk.png);
+      image-set(
+        url(../../public/images/contacts/bg-desk.png) 1x,
+        url(../../public/images/contacts/bg-desk-2x.png) 2x,
+        url(../../public/images/contacts/bg-desk-3x.png) 3x
+      );
   }
 }
 .about-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url(../../public/images/about/about-bg-mb.png);
+    image-set(
+      url(../../public/images/about/about-bg-mb.png) 1x,
+      url(../../public/images/about/about-bg-mb-2x.png) 2x,
+      url(../../public/images/about/about-bg-mb-3x.png) 3x
+    );
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-      url(../../public/images/about/about-bg-tab.png);
+      image-set(
+        url(../../public/images/about/about-bg-tab.png) 1x,
+        url(../../public/images/about/about-bg-tab-2x.png) 2x,
+        url(../../public/images/about/about-bg-tab-3x.png) 3x
+      );
   }
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-      url(../../public/images/about/about-bg-desk.png);
+      image-set(
+        url(../../public/images/about/about-bg-desk.png) 1x,
+        url(../../public/images/about/about-bg-desk-2x.png) 2x,
+        url(../../public/images/about/about-bg-desk-3x.png) 3x
+      );
   }
 }
 
 .hero-section {
   background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-    url(../../public/images/hero/hero-bg-mb.png);
+    image-set(
+      url(../../public/images/hero/hero-bg-mb.png) 1x,
+      url(../../public/images/hero/hero-bg-mb-2x.png) 2x,
+      url(../../public/images/hero/hero-bg-mb-3x.png) 3x
+    );
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-      url(../../public/images/hero/hero-bg-tab.png);
+      image-set(
+        url(../../public/images/hero/hero-bg-tab.png) 1x,
+        url(../../public/images/hero/hero-bg-tab-2x.png) 2x,
+        url(../../public/images/hero/hero-bg-tab-3x.png) 3x
+      );
   }
 
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)),
-      url(../../public/images/hero/hero-bg-desk.png);
+      image-set(
+        url(../../public/images/hero/hero-bg-desk.png) 1x,
+        url(../../public/images/hero/hero-bg-desk-2x.png) 2x,
+        url(../../public/images/hero/hero-bg-desk-3x.png) 3x
+      );
   }
 }
 
@@ -206,7 +255,11 @@ body.menu-open {
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/career/bg-mb.png);
+      image-set(
+        url(../../public/images/career/bg-mb.png) 1x,
+        url(../../public/images/career/bg-mb-2x.png) 2x,
+        url(../../public/images/career/bg-mb-3x.png) 3x
+      );
   }
 
   .career-section-bottom {
@@ -214,7 +267,11 @@ body.menu-open {
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/career/bg-mb.png);
+      image-set(
+        url(../../public/images/career/bg-mb.png) 1x,
+        url(../../public/images/career/bg-mb-2x.png) 2x,
+        url(../../public/images/career/bg-mb-3x.png) 3x
+      );
     opacity: 0.75;
   }
 }
@@ -225,7 +282,11 @@ body.menu-open {
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/career/bg-tab.png);
+      image-set(
+        url(../../public/images/career/bg-tab.png) 1x,
+        url(../../public/images/career/bg-tab-2x.png) 2x,
+        url(../../public/images/career/bg-tab-3x.png) 3x
+      );
   }
 
   @media screen and (min-width: 1280px) {
@@ -233,7 +294,11 @@ body.menu-open {
         rgba(2, 15, 8, 0.75),
         rgba(2, 15, 8, 0.75)
       ),
-      url(../../public/images/career/bg-desk.png);
+      image-set(
+        url(../../public/images/career/bg-desk.png) 1x,
+        url(../../public/images/career/bg-desk-2x.png) 2x,
+        url(../../public/images/career/bg-desk-3x.png) 3x
+      );
   }
 }
 

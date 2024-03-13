@@ -121,4 +121,16 @@ export const sliderGalleryTabImages = [
     image: "/images/gallery/tablet/3.png",
     id: 6,
   },
+  {
+    image: "/images/gallery/tablet/1.png",
+    id: 7,
+  },
+  {
+    image: "/images/gallery/tablet/2.png",
+    id: 8,
+  },
+  {
+    image: "/images/gallery/tablet/3.png",
+    id: 9,
+  },
 ];
