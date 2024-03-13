@@ -91,7 +91,7 @@ export const CareerForm = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 md:pl-0 xl:p-0"
+      className="w-100% px-5 pt-6 pb-4 flex flex-col gap-y-4 md:pl-0 xl:p-0 md:pr-0"
     >
       <Toaster position="top-center" reverseOrder={false} />
       <ul className="flex flex-col gap-1 md:flex-row md:gap-5 xl:gap-6">

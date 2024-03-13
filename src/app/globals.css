@@ -465,12 +465,3 @@ body.menu-open {
     top: 220px;
   }
 }
-
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
-  .flex-one {
-    flex: 1;
-  }
-  .flex-two {
-    flex: 2;
-  }
-}

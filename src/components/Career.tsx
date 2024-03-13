@@ -18,12 +18,12 @@ export const Career = () => {
           <p className="text-3xl uppercase font-extralight text-right pr-14 pt-9 md:pt-0 md:text-left md:pl-20 xl:mb-11">
             Why us ?
           </p>
-          <div className="md:hidden">
+          <div className="md:hidden block">
             <CareerList />
           </div>
         </div>
-        <div className="md:flex md:px-8 md:gap-5 xl:p-0 xl:gap-6 xl:50%">
-          <div className="hidden md:block 2xl:pl-8">
+        <div className="md:flex md:px-8 md:gap-5 xl:p-0 xl:gap-6 ">
+          <div className="hidden md:block  xl:w-50%">
             <CareerList />
           </div>
           <div className="py-14 sm:px-5 smm:px-5 bg-center bg-cover career-section-bottom md:py-0 ">
